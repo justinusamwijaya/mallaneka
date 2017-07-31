@@ -1,8 +1,6 @@
 <template>
   <div class="description">
-    <h1>tes</h1><br />
-    <h1>tes</h1><br />
-    <h1>tes</h1><br />
+    <img class="tes" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTUn9kpxNrx5g-U1KhrFXQQvP27zlw0x1jCXtgTMks5KVpTPhR" />
   </div>
 </template>
 
@@ -10,7 +8,7 @@
 export default {
   data () {
     return {
-    
+
     }
   }
 }
@@ -21,5 +19,9 @@ export default {
     background-color: white;
     margin-top: 100px;
     text-align: center;
+  }
+
+  .tes{
+      box-shadow: 10px 10px 5px grey;
   }
 </style>

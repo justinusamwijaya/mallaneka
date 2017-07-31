@@ -2,16 +2,18 @@
   <div>
     <Description></Description>
     <Templates></Templates>
+    <DropdownFitur></DropdownFitur>
   </div>
 </template>
 
 <script>
+import DropdownFitur from './DropdownFitur'
 import Description from './Description'
 import Templates from './Templates'
 
 export default {
   components:{
-    Description,Templates
+    Description,Templates,DropdownFitur
   }
 }
 </script>
