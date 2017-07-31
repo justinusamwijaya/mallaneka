@@ -15,16 +15,7 @@
   </head>
   <body>
     <div id="app"></div>
-    <script src="text/javascript">
-      $.getScript('http://www.portalapp.com/bootstrap/js/bootstrap-carousel.js',function(){
-        $('.carousel').carousel();
-        });
-
-        $('#myCarousel').on('slid',function(){
-        $('.blocky').animate({marginLeft:"+=16%"},100).animate({marginLeft:"-=20%"},300).animate({marginLeft:"+=4%"},600);
-        })
-      </script>
-      <script src="text/javascript">
+      <script type="text/javascript">
       $(document).ready(function() {
       var panels = $('.user-infos');
       var panelsButton = $('.dropdown-user');
@@ -48,17 +39,17 @@
               {
                   currentButton.html('<i class="glyphicon glyphicon-chevron-down text-muted"></i>');
               }
-            })
-            });
+          })
+      });
 
 
-            $('[data-toggle="tooltip"]').tooltip();
+      $('[data-toggle="tooltip"]').tooltip();
 
-            $('button').click(function(e) {
-                e.preventDefault();
-                alert("This is a demo.\n :-)");
-            });
-        });
+      $('button').click(function(e) {
+          e.preventDefault();
+          alert("This is a demo.\n :-)");
+      });
+  });
     </script>
   </body>
 </html>

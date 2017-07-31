@@ -44,12 +44,12 @@ export default {
   box-shadow: 10px 10px 20px black;
 }
 .carousel,.item,.active{height:100%;}
-.fill{width:100%;height:100%;background-position:center;}
-.carousel-inner{height:100%;padding:50px;}
+.fill{width:100%;height:100%;background-position:center;margin-bottom: 50px;}
+.carousel-inner{height:100%;padding:1px;}
 .carousel-control{top:49%;left:5px;width:50px;height:50px;margin-top:-20px;font-size:100px;font-weight:100;line-height:30px;}
 
 
-.blocky {margin-left:19%;margin-top:9%;}
+.blocky {margin-left:19%;margin-top:7%;}
 
 .carousel-pills span:hover {
     background: none repeat scroll 0 0 #EEEEEE;
