@@ -1,6 +1,6 @@
 <template lang="html">
   <div>
-    <h1 class="footer"> ini footer </h1>
+    <h1 class="foot"> ini footer </h1>
   </div>
 </template>
 
@@ -10,7 +10,8 @@ export default {
 </script>
 
 <style scoped lang="css">
-  .footer{
+  .foot{
     color:white;
+    opacity: 10%;
   }
 </style>

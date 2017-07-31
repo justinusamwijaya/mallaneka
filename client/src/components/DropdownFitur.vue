@@ -1,20 +1,6 @@
 <template lang="html">
 <div class="container">
- <div class="well col-xs-8 col-sm-8 col-md-8 col-lg-8 col-xs-offset-2 col-sm-offset-2 col-md-offset-2 col-lg-offset-2">
-        <div class="row user-row">
-            <div class="col-xs-3 col-sm-2 col-md-1 col-lg-1">
-                <img class="img-circle"
-                     src="https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?sz=50"
-                     alt="User Pic">
-            </div>
-            <div class="col-xs-8 col-sm-9 col-md-10 col-lg-10">
-                <strong>Cyruxx</strong><br>
-                <span class="text-muted">User level: Administrator</span>
-            </div>
-            <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 dropdown-user" data-for=".cyruxx">
-                <i class="glyphicon glyphicon-chevron-down text-muted"></i>
-            </div>
-        </div>
+ <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 col-xs-offset-2 col-sm-offset-2 col-md-offset-2 col-lg-offset-2">
         <div class="row user-infos cyruxx">
             <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10 col-xs-offset-0 col-sm-offset-0 col-md-offset-1 col-lg-offset-1">
                 <div class="panel panel-primary">
@@ -88,8 +74,7 @@
             </div>
         </div>
 
-
-                <div class="row user-row">
+            <div class="well row user-row">
             <div class="col-xs-3 col-sm-2 col-md-1 col-lg-1">
                 <img class="img-circle"
                      src="https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?sz=50"
@@ -175,7 +160,7 @@
                 </div>
             </div>
         </div>
-        <div class="row user-row">
+        <div class="well row user-row">
             <div class="col-xs-3 col-sm-2 col-md-1 col-lg-1">
                 <img class="img-circle"
                      src="https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?sz=50"
@@ -197,7 +182,7 @@
                     </div>
                     <div class="panel-body">
                         <div class="row">
-                            <div class="col-md-3 col-lg-3 hidden-xs hidden-sm">
+                            <div class="info col-md-3 col-lg-3 hidden-xs hidden-sm">
                                 <img class="img-circle"
                                      src="https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?sz=100"
                                      alt="User Pic">
@@ -275,6 +260,12 @@ export default {
 </script>
 
 <style lang="css">
+
+.panel {
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+}
+
 .user-row {
     margin-bottom: 14px;
 }
