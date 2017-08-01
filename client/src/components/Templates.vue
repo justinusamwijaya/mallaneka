@@ -35,16 +35,15 @@ export default {
 }
 </script>
 
-<style lang="css">
+<style scoped lang="css">
 
 .content{
-
   width: 700px;
   height: 400px;
   box-shadow: 10px 10px 20px black;
 }
 .carousel,.item,.active{height:100%;}
-.fill{width:100%;height:100%;background-position:center;margin-bottom: 50px;}
+.fill{width:100%;height:100%;background-position:center;margin-bottom: 20px;}
 .carousel-inner{height:100%;padding:1px;}
 .carousel-control{top:49%;left:5px;width:50px;height:50px;margin-top:-20px;font-size:100px;font-weight:100;line-height:30px;}
 

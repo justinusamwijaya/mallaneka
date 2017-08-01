@@ -1,13 +1,8 @@
 <template>
-  <div class="description">
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
+  <div class="space">
+      <br /><br /><br />
+      <br /><br /><br />
+      <br /><br />
   </div>
 </template>
 
@@ -22,9 +17,9 @@ export default {
 </script>
 
 <style scoped lang="css">
-  .description{
+  .space{
     background-color: white;
-    margin-top: 100px;
+    margin-top: 0px;
     text-align: center;
   }
 </style>
