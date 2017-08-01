@@ -2,25 +2,25 @@
   <div class="app">
     <Menubar></Menubar>
     <router-view></router-view>
-    <Footer></Footer>
+    <Foot></Foot>
   </div>
 </template>
 
 <script>
 import Menubar from '@/components/Menubar'
-import Footer from '@/components/Footer'
+import Foot from '@/components/Foot'
 export default {
   name: 'app',
   components:{
-    Menubar,Footer
+    Menubar,Foot
   }
 }
 </script>
 
-<style lang="css">
+<style scoped lang="css">
 .app {
   background-image: url("http://allhdwallpapers.com/wp-content/uploads/2015/05/sunset-1.jpg");
   background-size: cover;
-  padding-bottom: 200px;
+  padding-bottom: 100px;
 }
 </style>
