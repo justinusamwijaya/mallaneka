@@ -227,6 +227,10 @@ export default {
 </script>
 
 <style scoped lang="css">
+.glyphicon{
+    font-size: 18px;
+}
+
 .drop{
   text-align: center;
   background-color: white;

@@ -227,6 +227,10 @@ export default {
 </script>
 
 <style scoped lang="css">
+.glyphicon{
+    font-size: 18px;
+}
+
 .drop{
   text-align: center;
   background-color: white;
@@ -237,10 +241,6 @@ export default {
 .panel {
   opacity: 0.8;
   filter: alpha(opacity=80);
-}
-
-.user-row {
-    padding:2px;
 }
 
 .user-row:last-child {

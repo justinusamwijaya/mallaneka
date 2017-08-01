@@ -35,7 +35,7 @@ export default {
 }
 </script>
 
-<style scoped lang="css">
+<style lang="css">
 
 .content{
   width: 700px;
