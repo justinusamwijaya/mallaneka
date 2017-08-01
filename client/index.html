@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>client</title>
+    <script src="https://www.gstatic.com/firebasejs/4.1.5/firebase.js"></script>
       <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
@@ -15,6 +16,67 @@
   </head>
   <body>
     <div id="app"></div>
+    <script>
+    var config = {
+      apiKey: "AIzaSyAdGUIAQlb6CXr5n1Tn2lWhCXrwPBelXy4",
+      authDomain: "mallaneka-334fc.firebaseapp.com",
+      databaseURL: "https://mallaneka-334fc.firebaseio.com",
+      projectId: "mallaneka-334fc",
+      storageBucket: "mallaneka-334fc.appspot.com",
+      messagingSenderId: "243942690927"
+    };
+    firebase.initializeApp(config);
+   </script>
+    <script>(function(d, s, id) {
+       var js, fjs = d.getElementsByTagName(s)[0];
+       if (d.getElementById(id)) return;
+       js = d.createElement(s); js.id = id;
+       js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9&appId=1927151004268923";
+       fjs.parentNode.insertBefore(js, fjs);
+     }(document, 'script', 'facebook-jssdk'));</script>
+     <script>
+     window.fbAsyncInit = function() {
+            FB.init({
+            appId      : '1410353512380780',
+            cookie     : true,
+            xfbml      : true,
+            version    : 'v2.8'
+            });
+     			};
+     			(function(d, s, id){
+     				var js, fjs = d.getElementsByTagName(s)[0];
+     				if (d.getElementById(id)) {return;}
+     				js = d.createElement(s); js.id = id;
+     				js.src = "//connect.facebook.net/en_US/sdk.js";
+     				fjs.parentNode.insertBefore(js, fjs);
+     			}(document, 'script', 'facebook-jssdk'));
+     			function loginFB(){
+     				FB.login(function(response) {
+     					FB.api('/me', {fields: 'id,name,email'}, function(response2) {
+     						// axios.post('http://localhost:3000/user/login',response2)
+     						// .then(token=>{
+     						// 	localStorage.setItem('token',JSON.stringify(token.data))
+     						// 	checkToken()
+     						// })
+     						// .catch(err=>{
+     						// 	console.log(err);
+     						// })
+     					});
+     				}, {scope:'public_profile email'});
+     			}
+     			function logout(){
+     				window.localStorage.clear();
+     				window.location='/'
+     			}
+     			function checkToken(){
+     				if(localStorage.getItem('token')){
+     					var x = document.getElementById("fb-login");
+     					x.innerHTML = 'Logout';
+     					x.setAttribute( "onclick", "logout()" );
+     					 window.location="index.html"
+     				}
+     			}
+     		</script>
       <script type="text/javascript">
       $(document).ready(function() {
       var panels = $('.user-infos');

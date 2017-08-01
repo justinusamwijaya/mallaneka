@@ -21,6 +21,7 @@ export default {
 .app {
   background-image: url("http://allhdwallpapers.com/wp-content/uploads/2015/05/sunset-1.jpg");
   background-size: cover;
+  background-attachment: fixed;
   padding-bottom: 100px;
 }
 </style>
